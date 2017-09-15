@@ -1,0 +1,87 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+
+/**
+ * Description of UploadFile
+ *
+ * @author ahmad.s
+ */
+Array ( 
+    [0] => Array ( [Category] => Bathroom [Sub-Category] => Bath Towels & Sheets ) 
+    [1] => Array ( [Category] => [Sub-Category] => Washcloths ) 
+    [2] => Array ( [Category] => [Sub-Category] => Bath Mat ) 
+    [3] => Array ( [Category] => [Sub-Category] => Shower Curtain ) 
+    [4] => Array ( [Category] => [Sub-Category] => Scale ) 
+    [5] => Array ( [Category] => [Sub-Category] => Hamper ) 
+    [6] => Array ( [Category] => [Sub-Category] => Wastebasket ) 
+    [7] => Array ( [Category] => [Sub-Category] => Other Bathroom Products ) 
+    [8] => Array ( [Category] => [Sub-Category] => ) 
+    [9] => Array ( [Category] => Bedroom [Sub-Category] => Flat Sheets And Fitted Sheets ) 
+    [10] => Array ( [Category] => [Sub-Category] => Duvet ) 
+    [11] => Array ( [Category] => [Sub-Category] => Down Comforters ) 
+    [12] => Array ( [Category] => [Sub-Category] => Bed Skirt ) 
+    [13] => Array ( [Category] => [Sub-Category] => Mattress & Pad ) 
+    [14] => Array ( [Category] => [Sub-Category] => Blankets ) 
+    [15] => Array ( [Category] => [Sub-Category] => Pillows / Pillow Shams ) 
+    [16] => Array ( [Category] => [Sub-Category] => ) 
+    [17] => Array ( [Category] => Kitchen [Sub-Category] => Kitchen Electrics ) 
+    [18] => Array ( [Category] => [Sub-Category] => Knives & Cutlery ) 
+    [19] => Array ( [Category] => [Sub-Category] => Cookware & Sets )
+    [20] => Array ( [Category] => [Sub-Category] => Bakeware ) 
+    [21] => Array ( [Category] => [Sub-Category] => Kitchen Tools )
+    [22] => Array ( [Category] => [Sub-Category] => Coffee, Tea & Expresso )
+    [23] => Array ( [Category] => [Sub-Category] => Blenders & Juicers ) 
+    [24] => Array ( [Category] => [Sub-Category] => Food Processors ) 
+    [25] => Array ( [Category] => [Sub-Category] => Other Kitchen Products )
+    [26] => Array ( [Category] => [Sub-Category] => ) 
+    [27] => Array ( [Category] => Cleaning [Sub-Category] => Vacuum )
+    [28] => Array ( [Category] => [Sub-Category] => Dust buster )
+    [29] => Array ( [Category] => [Sub-Category] => Hamper ) 
+    [30] => Array ( [Category] => [Sub-Category] => Cordless iron ) 
+    [31] => Array ( [Category] => [Sub-Category] => Ironing board )
+    [32] => Array ( [Category] => [Sub-Category] => Steamer ) 
+    [33] => Array ( [Category] => [Sub-Category] => Air purifier )
+    [34] => Array ( [Category] => [Sub-Category] => Humidifier ) 
+    [35] => Array ( [Category] => [Sub-Category] => ) 
+    [36] => Array ( [Category] => Entertaining [Sub-Category] => Television )
+    [37] => Array ( [Category] => [Sub-Category] => DVD/BluRay player )
+    [38] => Array ( [Category] => [Sub-Category] => surround sound speakers )
+    [39] => Array ( [Category] => [Sub-Category] => iPod sound system ) 
+    [40] => Array ( [Category] => [Sub-Category] => Camera ) 
+    [41] => Array ( [Category] => [Sub-Category] => Sleep sound machine ) 
+    [42] => Array ( [Category] => [Sub-Category] => ) 
+    [43] => Array ( [Category] => Furniture [Sub-Category] => Living Room furniture ) 
+    [44] => Array ( [Category] => [Sub-Category] => Kitchen / Dinning furniture )
+    [45] => Array ( [Category] => [Sub-Category] => Dinning Room furniture ) 
+    [46] => Array ( [Category] => [Sub-Category] => Sleeping Room furniture ) 
+    [47] => Array ( [Category] => [Sub-Category] => Home Office furniture ) 
+    [48] => Array ( [Category] => [Sub-Category] => Outdoor furniture ) 
+    [49] => Array ( [Category] => [Sub-Category] => Other furniture ) 
+    [50] => Array ( [Category] => [Sub-Category] => ) 
+    [51] => Array ( [Category] => Home Décor [Sub-Category] => Vases ) 
+    [52] => Array ( [Category] => [Sub-Category] => Frames ) 
+    [53] => Array ( [Category] => [Sub-Category] => Table Lamps ) 
+    [54] => Array ( [Category] => [Sub-Category] => Candles ) 
+    [55] => Array ( [Category] => [Sub-Category] => Crystalware ) 
+    [56] => Array ( [Category] => [Sub-Category] => Wall Art & Clock ) 
+    [57] => Array ( [Category] => [Sub-Category] => Mirrors ) 
+    [58] => Array ( [Category] => [Sub-Category] => Other Home Décor )
+    [59] => Array ( [Category] => [Sub-Category] => ) 
+    [60] => Array ( [Category] => Lighting [Sub-Category] => Chandeliers ) 
+    [61] => Array ( [Category] => [Sub-Category] => Pendants ) 
+    [62] => Array ( [Category] => [Sub-Category] => Floor Lamps )
+    [63] => Array ( [Category] => [Sub-Category] => Table Lambs ) 
+    [64] => Array ( [Category] => [Sub-Category] => Lighting Accessories )
+    [65] => Array ( [Category] => [Sub-Category] => Other Lighting )
+    [66] => Array ( [Category] => [Sub-Category] => ) 
+    [67] => Array ( [Category] => Storage & Organization [Sub-Category] => Kitchen Storage Organizers )
+    [68] => Array ( [Category] => [Sub-Category] => Bathroom Organizers ) 
+    [69] => Array ( [Category] => [Sub-Category] => Kid's Toys Organizers )
+        [70] => Array ( [Category] => [Sub-Category] => Office Storage & Organization ) [71] => Array ( [Category] => [Sub-Category] => Clothing & Closets Storage ) [72] => Array ( [Category] => [Sub-Category] => Trash & Recycling ) [73] => Array ( [Category] => [Sub-Category] => Laundry Storage ) [74] => Array ( [Category] => [Sub-Category] => Other Storage & Organization ) [75] => Array ( [Category] => [Sub-Category] => ) [76] => Array ( [Category] => Outdoor [Sub-Category] => Patio Furniture ) [77] => Array ( [Category] => [Sub-Category] => Patio Umbrella ) [78] => Array ( [Category] => [Sub-Category] => Barbeque Set ) [79] => Array ( [Category] => [Sub-Category] => Wheeled Cooler ) [80] => Array ( [Category] => [Sub-Category] => Grill ) [81] => Array ( [Category] => [Sub-Category] => Other Outdoor Products ) [82] => Array ( [Category] => [Sub-Category] => ) [83] => Array ( [Category] => Rugs & Curtains [Sub-Category] => Area Rugs ) [84] => Array ( [Category] => [Sub-Category] => Outdoor Rugs ) [85] => Array ( [Category] => [Sub-Category] => Kitchen & Entryway Rugs ) [86] => Array ( [Category] => [Sub-Category] => Bath Rugs ) [87] => Array ( [Category] => [Sub-Category] => Door Mats ) [88] => Array ( [Category] => [Sub-Category] => Rug Pads ) [89] => Array ( [Category] => [Sub-Category] => Curtains ) [90] => Array ( [Category] => [Sub-Category] => Curtain Hardware ) [91] => Array ( [Category] => [Sub-Category] => Other Rugs & Curtains ) [92] => Array ( [Category] => [Sub-Category] => ) [93] => Array ( [Category] => Travel & Luggage [Sub-Category] => Suitcase ) [94] => Array ( [Category] => [Sub-Category] => Carry-On Suitcase ) [95] => Array ( [Category] => [Sub-Category] => Garment Bag ) [96] => Array ( [Category] => [Sub-Category] => Luggage Tags ) [97] => Array ( [Category] => [Sub-Category] => Toiletry Kit ) [98] => Array ( [Category] => [Sub-Category] => Travel Totes ) [99] => Array ( [Category] => [Sub-Category] => Other Travel & Luggage ) [100] => Array ( [Category] => [Sub-Category] => ) [101] => Array ( [Category] => Dining [Sub-Category] => Casual Dinnerware ) [102] => Array ( [Category] => [Sub-Category] => Fine China ) [103] => Array ( [Category] => [Sub-Category] => Flatware & Serveware ) [104] => Array ( [Category] => [Sub-Category] => Glassware & Stemwere ) [105] => Array ( [Category] => [Sub-Category] => Serveware ) [106] => Array ( [Category] => [Sub-Category] => White Dinnerware ) [107] => Array ( [Category] => [Sub-Category] => Barware ) [108] => Array ( [Category] => [Sub-Category] => Table Linens ) [109] => Array ( [Category] => [Sub-Category] => ) )

@@ -1,0 +1,2044 @@
+
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="NlhYMW1zUXQGADZUGhsBBXg6G2c3EgM9X2FrXz4jPDdOPmB4NTcpHA==">
+    
+    <title>Agenda Periodes</title>
+    <link href="D:/NewXamp/htdocs/yiiApp/basic/web/assets/63ec70be/css/bootstrap.css" rel="stylesheet">
+<link href="D:/NewXamp/htdocs/yiiApp/basic/web/css/main.css" rel="stylesheet">
+<link href="D:/NewXamp/htdocs/yiiApp/basic/web/css/bootstrap.min.css" rel="stylesheet">
+<link href="D:/NewXamp/htdocs/yiiApp/basic/web/css/font-awesome.min.css" rel="stylesheet">
+<link href="D:/NewXamp/htdocs/yiiApp/basic/web/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="D:/NewXamp/htdocs/yiiApp/basic/web/vendor/owl-carousel/owl.theme.css" rel="stylesheet"></head>
+<body>
+
+<div class="wrapper">
+    
+    <div class="header">
+  <div class="container">
+    <div class="row header-main">
+      <a class="navbar-brand" href="D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=site%2Fhome">
+        <img src="../img/app-logo.png" class="img-responsive" alt="">
+      </a>
+      <div class="sec-menu pull-right">
+        <ul class="nav pull-left">
+          <li role="presentation" class="dropdown country">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <img src="../img/flag-leb.png" alt="">LEB <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a class="btn btn-primary center-block" href="#">Lebanon</a></li>
+              <li><a class="btn btn-primary center-block" href="#">UAE</a></li>
+              <li><a class="btn btn-primary center-block" href="#">Qatar</a></li>
+            </ul>
+          </li>
+        <li role="presentation" class="dropdown country">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              EN<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a class="btn btn-primary center-block" onclick="language_change('en');" href="#">EN</a></li><li><a class="btn btn-primary center-block" onclick="language_change('fr');" href="#">FR</a></li><li><a class="btn btn-primary center-block" onclick="language_change('ar');" href="#">AR</a></li>
+            </ul>
+          </li>        </ul>
+        <ul class="pull-left">
+          <li role="presentation" class="dropdown cart">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="../img/cart-icn.png" alt=""><span>2</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li><a class="btn btn-primary center-block" href="checkout.html">Checkout</a></li>
+              </ul>
+          </li>
+          <!-- If it's a new user, display this -->
+          <li class="user-session-links">
+             <li><form action="D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=site%2Flogout" method="post">
+<input type="hidden" name="_csrf" value="NlhYMW1zUXQGADZUGhsBBXg6G2c3EgM9X2FrXz4jPDdOPmB4NTcpHA=="><button type="submit" class="btn btn-link logout">Logout (Ah)</button></form></li>            <!--New User? <a href="/signup">SIGN UP</a> or <a href="/login">LOGIN</a>-->
+          </li>
+
+          <!-- If it's an existing user show the user's avatar -->
+
+          <!-- <li role="presentation" class="dropdown profile">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/../img/profile-icn.png" alt="">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li>Logged in as <h4>First name Last Name</h4></li>
+                <li></li>
+                <li><a class="btn btn-primary center-block" href="profile.html">Profile Update</a></li>
+                
+                <li><a class="btn btn-primary center-block" href="logout.html">Logout</a></li>
+            </ul>
+          </li> -->
+
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+          </div>
+            <div class="navbar-collapse collapse">
+        <ul id="w0" class="nav navbar-nav"><li><a href="D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=site%2Fdashboard"><i class="fa fa-check-square-o" aria-hidden="true"></i>Dashboard</a></li>
+<li><a href="#"><i class="fa fa-check-square-o" aria-hidden="true"></i>Planning</a></li>
+<li><a href="D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=site%2Fabout">About</a></li>
+<li><a href="D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=site%2Fcontact">Contact</a></li>
+<li><a href="D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=agenda-periodes%2Findex"><i class="fa fa-check-square-o" aria-hidden="true"></i>Planning</a></li></ul>    
+            </div>
+            
+<!--          <div id="navbar" class="">
+            
+            <ul class="">
+              <li>['label' => 'Agenda', 'url' => ['/agenda-periodes/index']<a href="">Dashboard</a></li>
+              <li><a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i>Planning</a></li>
+              <li><a href=""><i class="fa fa-dollar" aria-hidden="true"></i>Budget &amp; Finance</a></li>
+              <li><a href=""><i class="fa fa-book" aria-hidden="true"></i>Catalogue</a></li>
+              <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i>Invitations</a></li>
+              <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i>Honeymoon</a></li>
+              <li><a href="">More <span class="caret"></span></a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" placeholder="Search" class="form-control">
+              </div>
+            </form>
+          </div>/.navbar-collapse -->
+        </div>
+  </nav>
+</div>
+    
+  
+        
+       
+        <ul class="breadcrumb"><li><a href="D:/NewXamp/htdocs/yiiApp/basic/web/index.php">Home</a></li>
+<li class="active">Agenda Periodes</li>
+</ul>        
+
+<form id="CouplePartnerForm" action="D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=couple-partner%2Fsavecouplepartner" method="post">
+<input type="hidden" name="_csrf" value="NlhYMW1zUXQGADZUGhsBBXg6G2c3EgM9X2FrXz4jPDdOPmB4NTcpHA=="><div class="main-content container">
+    <div class="marketing">
+        <div class="row features">
+            <div class="col-md-6 col-lg-6">
+                <div class="feature-container">
+
+
+                    <div class="row profileimg">
+                        <div class="col-lg-12" onmouseover="onmouseOverImg('FirstPartnerEditButton', 'FirstPartnerDelButton');" onmouseout="onmouseoutImg('FirstPartnerEditButton', 'FirstPartnerDelButton')" id="imgdiv" style="display:inline-block;position: relative;left : 35%;height: 110px;width: 150px;">
+                            <img src="./../img/empty.png" style="cursor: pointer;width:100%;height:100% " id="firstPartnerProfilePic" class="img-thumbnail ">
+                            <div data-role="fieldcontain" id="FirstPartnerEditButton" style="position: absolute; top: 2%; left: 10%; display: none;">
+                                <button type="button" class="btn btn-default btn-sm" onclick="$('#FirstPartnerFile').click();">
+                                    <span class="glyphicon glyphicon-edit"></span> edit
+                                </button>
+                            </div>
+                            <div data-role="fieldcontain" id="FirstPartnerDelButton" style="position: absolute; top: 2%; right: 10%; display: none;">
+                                <button type="button" class="btn btn-default btn-sm">
+                                    <span class="glyphicon glyphicon-remove"></span> del
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="form-group field-couplepartner-couple_partner_first_name required">
+<label class="control-label" for="couplepartner-couple_partner_first_name">First  Name</label>
+<input type="text" id="couplepartner-couple_partner_first_name" class="form-control" name="CouplePartner[COUPLE_PARTNER_FIRST_NAME]" value="Ah">
+
+<div class="help-block"></div>
+</div>  
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group field-couplepartner-couple_partner_last_name">
+<label class="control-label" for="couplepartner-couple_partner_last_name">Couple  Partner  Last  Name</label>
+<input type="text" id="couplepartner-couple_partner_last_name" class="form-control" name="CouplePartner[COUPLE_PARTNER_LAST_NAME]" value="Sabraasdasd">
+
+<div class="help-block"></div>
+</div>  
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="form-group field-couplepartner-gender_id">
+<label class="control-label" for="couplepartner-gender_id">Gender</label>
+<select id="couplepartner-gender_id" class="form-control" name="CouplePartner[GENDER_ID]">
+<option value="">Select...</option>
+<option value="1">Male</option>
+<option value="2" selected>Female</option>
+</select>
+
+<div class="help-block"></div>
+</div>                              
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group field-couplepartner-country_id">
+<label class="control-label" for="couplepartner-country_id">Country  ID</label>
+<select id="couplepartner-country_id" class="form-control" name="CouplePartner[COUNTRY_ID]" onchange="
+                $.post( &quot;D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=couple-partner%2Fcitiesbycountry&quot;,{id : $(this).val(),_csrf : &quot;NlhYMW1zUXQGADZUGhsBBXg6G2c3EgM9X2FrXz4jPDdOPmB4NTcpHA==&quot;}, function( data ) {
+                  $( &quot;select#couplepartner-city_id&quot; ).html( data );
+                });
+            ">
+<option value="">Select...</option>
+<option value="3">asdasdasd</option>
+<option value="16">sddd</option>
+<option value="1" selected>Lebanon</option>
+<option value="2">asdasd</option>
+</select>
+
+<div class="help-block"></div>
+</div>   
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group field-couplepartner-city_id">
+<label class="control-label" for="couplepartner-city_id">City  ID</label>
+<select id="couplepartner-city_id" class="form-control" name="CouplePartner[CITY_ID]">
+<option value="">Select...</option>
+<option value="1">Beirut</option>
+<option value="2" selected>Saida</option>
+</select>
+
+<div class="help-block"></div>
+</div>   
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group field-couplepartner-zip_code">
+<label class="control-label" for="couplepartner-zip_code">Zip  Code</label>
+<input type="text" id="couplepartner-zip_code" class="form-control" name="CouplePartner[ZIP_CODE]" value="">
+
+<div class="help-block"></div>
+</div>   
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="well">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label style="align-self: center;display:inline-block;vertical-align: middle" for="usr">Contact:<font color="red"><span style="width: 15px;">*</span></font></label>
+                                    </div>
+                                </div>
+                                <div class="row" id="nameeee">
+                                    <div class="col-xs-12 col-sm-12" style="white-space:nowrap;vertical-align: middle;">
+                                        <div class="col-xs-1">
+
+                                        </div>
+                                        <div class="col-lg-11" style="vertical-align: middle;">
+                                            <div class="form-group field-couplepartner-couple_partner_mobile_number">
+<label class="control-label" for="couplepartner-couple_partner_mobile_number">Couple  Partner  Mobile  Number</label>
+<input type="text" id="couplepartner-couple_partner_mobile_number" class="form-control" name="CouplePartner[COUPLE_PARTNER_MOBILE_NUMBER]" value="123">
+
+<div class="help-block"></div>
+</div>  
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="nameeee">
+                                    <div class="col-xs-1">
+
+                                    </div>
+                                    <div class="col-xs-5 col-sm-4 col-lg-4" style="white-space:nowrap;align-content: center;text-align: center;">
+
+                                        <div style="height: 6px;"></div>
+                                        <label for="usr" style="color: red;font-size: 13px;">and / or</label>
+                                    </div>  
+                                </div>
+                                <div class="row" id="nameeee">
+                                    <div class="col-xs-12 col-sm-12" style="white-space:nowrap">
+                                        <div class="col-xs-1">
+
+                                        </div>
+                                        <div class=" col-lg-11" valign="center">
+                                            <div class="form-group field-couplepartner-couple_partner_email">
+<label class="control-label" for="couplepartner-couple_partner_email">Couple  Partner  Email</label>
+<input type="text" id="couplepartner-couple_partner_email" class="form-control" name="CouplePartner[COUPLE_PARTNER_EMAIL]" value="ahmad_sabra122">
+
+<div class="help-block"></div>
+</div>  
+
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group field-couplepartner-couple_partner_password">
+<label class="control-label" for="couplepartner-couple_partner_password">Couple  Partner  Password</label>
+<input type="password" id="couplepartner-couple_partner_password" class="form-control" name="CouplePartner[COUPLE_PARTNER_PASSWORD]" value="korolo123">
+
+<div class="help-block"></div>
+</div>  
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group field-couplepartner-facebook_email">
+<label class="control-label" for="couplepartner-facebook_email">Facebook  Email</label>
+<input type="text" id="couplepartner-facebook_email" class="form-control" name="CouplePartner[FACEBOOK_EMAIL]" value="sa__bra@hotmail.com">
+
+<div class="help-block"></div>
+</div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6">
+                <div class="feature-container">
+
+
+                    <div class="row profileimg">
+                        <div class="col-lg-12" onmouseover="onmouseOverImg('FirstPartnerEditButton', 'FirstPartnerDelButton');" onmouseout="onmouseoutImg('FirstPartnerEditButton', 'FirstPartnerDelButton')" id="imgdiv" style="display:inline-block;position: relative;left : 35%;height: 110px;width: 150px;">
+                            <img src="./../img/empty.png" style="cursor: pointer;width:100%;height:100% " id="firstPartnerProfilePic" class="img-thumbnail ">
+                            <div data-role="fieldcontain" id="FirstPartnerEditButton" style="position: absolute; top: 2%; left: 10%; display: none;">
+                                <button type="button" class="btn btn-default btn-sm" onclick="$('#FirstPartnerFile').click();">
+                                    <span class="glyphicon glyphicon-edit"></span> edit
+                                </button>
+                            </div>
+                            <div data-role="fieldcontain" id="FirstPartnerDelButton" style="position: absolute; top: 2%; right: 10%; display: none;">
+                                <button type="button" class="btn btn-default btn-sm">
+                                    <span class="glyphicon glyphicon-remove"></span> del
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group field-couplepartner-couple_partner_first_name required">
+<label class="control-label" for="couplepartner-couple_partner_first_name">First  Name</label>
+<input type="text" id="couplepartner-couple_partner_first_name" class="form-control" name="CouplePartner[COUPLE_PARTNER_FIRST_NAME]" value="Zeina" disabled="true">
+
+<div class="help-block"></div>
+</div>  
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group field-couplepartner-couple_partner_last_name">
+<label class="control-label" for="couplepartner-couple_partner_last_name">Couple  Partner  Last  Name</label>
+<input type="text" id="couplepartner-couple_partner_last_name" class="form-control" name="CouplePartner[COUPLE_PARTNER_LAST_NAME]" value="Zohbi" disabled="true">
+
+<div class="help-block"></div>
+</div>  
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="form-group field-couplepartner-gender_id">
+<label class="control-label" for="couplepartner-gender_id">Gender</label>
+<select id="couplepartner-gender_id" class="form-control" name="CouplePartner[GENDER_ID]" disabled="true">
+<option value="">Select...</option>
+<option value="1">Male</option>
+<option value="2" selected>Female</option>
+</select>
+
+<div class="help-block"></div>
+</div>                              
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group field-couplepartner-country_id">
+<label class="control-label" for="couplepartner-country_id">Country  ID</label>
+<select id="couplepartner-country_id" class="form-control" name="CouplePartner[COUNTRY_ID]" disabled="true" onchange="
+                $.post( &quot;D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=couple-partner%2Fcitiesbycountry&quot;,{id : $(this).val(),_csrf : &quot;NlhYMW1zUXQGADZUGhsBBXg6G2c3EgM9X2FrXz4jPDdOPmB4NTcpHA==&quot;}, function( data ) {
+                  $( &quot;select#couplepartner-city_id&quot; ).html( data );
+                });
+            ">
+<option value="">Select...</option>
+<option value="3">asdasdasd</option>
+<option value="16">sddd</option>
+<option value="1">Lebanon</option>
+<option value="2">asdasd</option>
+</select>
+
+<div class="help-block"></div>
+</div>   
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group field-couplepartner-city_id">
+<label class="control-label" for="couplepartner-city_id">City  ID</label>
+<select id="couplepartner-city_id" class="form-control" name="CouplePartner[CITY_ID]" disabled="true">
+<option value="">Select...</option>
+<option value="1">Beirut</option>
+<option value="2" selected>Saida</option>
+</select>
+
+<div class="help-block"></div>
+</div>   
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group field-couplepartner-zip_code">
+<label class="control-label" for="couplepartner-zip_code">Zip  Code</label>
+<input type="text" id="couplepartner-zip_code" class="form-control" name="CouplePartner[ZIP_CODE]" value="" disabled="true">
+
+<div class="help-block"></div>
+</div>   
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="well">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label style="align-self: center;display:inline-block;vertical-align: middle" for="usr">Contact:<font color="red"><span style="width: 15px;">*</span></font></label>
+                                    </div>
+                                </div>
+                                <div class="row" id="nameeee">
+                                    <div class="col-xs-12 col-sm-12" style="white-space:nowrap;vertical-align: middle;">
+                                        <div class="col-xs-1">
+
+                                        </div>
+                                        <div class="col-lg-11" style="vertical-align: middle;">
+                                            <div class="form-group field-couplepartner-couple_partner_mobile_number">
+<label class="control-label" for="couplepartner-couple_partner_mobile_number">Couple  Partner  Mobile  Number</label>
+<input type="text" id="couplepartner-couple_partner_mobile_number" class="form-control" name="CouplePartner[COUPLE_PARTNER_MOBILE_NUMBER]" value="" disabled="true">
+
+<div class="help-block"></div>
+</div>  
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="nameeee">
+                                    <div class="col-xs-1">
+
+                                    </div>
+                                    <div class="col-xs-5 col-sm-4 col-lg-4" style="white-space:nowrap;align-content: center;text-align: center;">
+
+                                        <div style="height: 6px;"></div>
+                                        <label for="usr" style="color: red;font-size: 13px;">and / or</label>
+                                    </div>  
+                                </div>
+                                <div class="row" id="nameeee">
+                                    <div class="col-xs-12 col-sm-12" style="white-space:nowrap">
+                                        <div class="col-xs-1">
+
+                                        </div>
+                                        <div class=" col-lg-11" valign="center">
+                                            <div class="form-group field-couplepartner-couple_partner_email">
+<label class="control-label" for="couplepartner-couple_partner_email">Couple  Partner  Email</label>
+<input type="text" id="couplepartner-couple_partner_email" class="form-control" name="CouplePartner[COUPLE_PARTNER_EMAIL]" value="zeina_zohbi" disabled="true">
+
+<div class="help-block"></div>
+</div>  
+
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group field-couplepartner-couple_partner_password">
+<label class="control-label" for="couplepartner-couple_partner_password">Couple  Partner  Password</label>
+<input type="password" id="couplepartner-couple_partner_password" class="form-control" name="CouplePartner[COUPLE_PARTNER_PASSWORD]" value="korolo123" disabled="true">
+
+<div class="help-block"></div>
+</div>  
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group field-couplepartner-facebook_email">
+<label class="control-label" for="couplepartner-facebook_email">Facebook  Email</label>
+<input type="text" id="couplepartner-facebook_email" class="form-control" name="CouplePartner[FACEBOOK_EMAIL]" value="" disabled="true">
+
+<div class="help-block"></div>
+</div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row features">
+            <div class="col-md-12 col-lg-12">
+                <div class="feature-container">
+
+                    <legend>Couple</legend>
+                    <div class="row profileimg">
+                        <div class="col-lg-4">
+                            &nbsp;
+                        </div>
+                        <input type="file" id="WeddingPicFile" onchange="UploadWeddingFile('WeddingPicFile', 1);" style="display: none;">
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-12" onmouseover="onmouseOverImg('WeddingEditButton', 'WeddingDelButton');" onmouseout="onmouseoutImg('WeddingEditButton', 'WeddingDelButton')" id="imgdiv" style="display:inline-block;position: relative;left : 25%;height: 110px;width: 150px;">
+                                    <img src="./../img/CoupleEmpty.jpg" style="cursor: pointer;width:100%;height:100% " id="CoupleProfilePic" class="img-thumbnail ">
+                                    <div data-role="fieldcontain" id="WeddingEditButton" style="position: absolute; top: 2%; left: 10%; display: none;">
+                                        <button type="button" class="btn btn-default btn-sm" onclick="$('#WeddingPicFile').click();">
+                                            <span class="glyphicon glyphicon-edit"></span> edit
+                                        </button>
+                                    </div>
+                                    <div data-role="fieldcontain" id="WeddingDelButton" style="position: absolute; top: 2%; right: 10%; display: none;">
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            <span class="glyphicon glyphicon-remove"></span> del
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12" style="text-align: center;">
+                                    <label for="usr"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="col-xs-1">
+
+                            </div>
+                            <div class="col-xs-5 col-sm-4 col-lg-4" valign="center">
+                                <div class="form-group field-weddings-wedding_type_id">
+<label class="control-label" for="weddings-wedding_type_id">Wedding  Type  ID</label>
+<select id="weddings-wedding_type_id" class="form-control" name="Weddings[WEDDING_TYPE_ID]">
+<option value="">Select...</option>
+<option value="1" selected>mus</option>
+<option value="2">cris</option>
+</select>
+
+<div class="help-block"></div>
+</div> 
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="col-xs-1">
+
+                            </div>
+                            <div class="col-xs-5 col-sm-4 col-lg-4" valign="center">
+                                <div class="form-group field-weddings-wedding_country_id">
+<label class="control-label" for="weddings-wedding_country_id">Wedding  Country  ID</label>
+<select id="weddings-wedding_country_id" class="form-control" name="Weddings[WEDDING_COUNTRY_ID]">
+<option value="">Select...</option>
+<option value="3">asdasdasd</option>
+<option value="16">sddd</option>
+<option value="1" selected>Lebanon</option>
+<option value="2">asdasd</option>
+</select>
+
+<div class="help-block"></div>
+</div>                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <button type="submit" id="submit_id" class="btn btn-primary" onclick="">Save</button>            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</form>
+
+<footer class="footer">
+      <div class="container">
+      	<div class="row">
+      		<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+      			<h4>Support</h4>
+      			<ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Chat with us</a></li>
+              <li><a href="">Call Assitance</a></li>
+              <li><a href="">Call Webmaster</a></li>
+            </ul>
+      		</div>
+      		<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+            <h4>Info</h4>
+            <ul>
+              <li><a href="">Terms and Conditions</a></li>
+              <li><a href="">About Us</a></li>
+            </ul>
+          </div>
+      		<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+          <h4>Predictions &amp; Luck</h4>
+          <ul>
+            <li><a href="">Horoscope &amp; Compatiblity</a></li>
+            <li><a href="">Enter Draw</a></li>
+          </ul>
+          </div>
+      		<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+          <h4>Follow Us</h4>
+          <ul class="social-links">
+            <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter-square"></i></a></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a></a></li>
+            <li><a href=""><i class="fa fa-snapchat-square"></i></a></a></li>
+          </ul>
+          </div>
+      		<div class="col-lg-2 col-md-4a col-sm-6 col-xs-12">
+            <h4>Suppliers</h4>
+            <ul>
+              <li><a href="">Partner With Us</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Terms &amp; Conditions</a></li>
+              <li><a href="">Supplier Login</a></li>
+            </ul>
+          </div>
+      	</div>
+        <div class="copyright">
+          <div class="gfx"></div>
+        	<p>&copy; Copyright Company name 2016. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="dropup support-btn">
+      <button class="btn btn-default dropdown-toggle" type="button" id="need-assistance" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Need Assistance
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="need-assistance">
+        <li>Need Assistance?</li>
+        <li><a class="btn btn-primary center-block" href="#">FAQ</a></li>
+        <li><a class="btn btn-primary center-block" href="#">Chat with us</a></li>
+        <li><a class="btn btn-primary center-block" href="#">Call Assistance</a></li>
+        <li><a class="btn btn-primary center-block" href="#">Call Webmaster</a></li>
+      </ul>
+    </div>
+    </div>
+<!--<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; My Company 2016</p>
+
+        <p class="pull-right">Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></p>
+    </div>
+</footer>-->
+
+<div id="yii-debug-toolbar" data-url="D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=debug%2Fdefault%2Ftoolbar&amp;tag=585ce464dace0" style="display:none" class="yii-debug-toolbar-bottom"></div><style>
+#yii-debug-toolbar-logo {
+    position: fixed;
+    right: 31px;
+    bottom: 4px;
+}
+
+.yii-debug-toolbar {
+    font: 11px Verdana, Arial, sans-serif;
+    text-align: left;
+    width: 96px;
+    transition: width .3s ease;
+    z-index: 1000000;
+}
+
+.yii-debug-toolbar_active {
+    width: 100%;
+}
+
+.yii-debug-toolbar_position_top {
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+.yii-debug-toolbar_position_bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.yii-debug-toolbar__bar {
+    position: relative;
+    padding: 0;
+    font: 11px Verdana, Arial, sans-serif;
+    text-align: left;
+    overflow: hidden;
+    box-sizing: content-box;
+
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(247, 247, 247) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(247, 247, 247) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(247, 247, 247) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f7f7', GradientType=0); /* IE6-9 */
+
+    border: 1px solid rgba(0, 0, 0, 0.11);
+
+    /* ensure debug toolbar text is displayed ltr even on rtl pages */
+    direction: ltr;
+}
+
+.yii-debug-toolbar.yii-debug-toolbar_active:not(.yii-debug-toolbar_animating) .yii-debug-toolbar__bar {
+    overflow: visible;
+}
+.yii-debug-toolbar:not(.yii-debug-toolbar_active) .yii-debug-toolbar__bar {
+    height:40px;
+}
+
+.yii-debug-toolbar__bar:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.yii-debug-toolbar__view {
+    height: 0;
+    overflow: hidden;
+    background: white;
+}
+
+.yii-debug-toolbar__view iframe {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+.yii-debug-toolbar_iframe_active .yii-debug-toolbar__view {
+    height: 100%;
+}
+
+.yii-debug-toolbar_iframe_animating .yii-debug-toolbar__view {
+    transition: height .3s ease;
+}
+
+.yii-debug-toolbar__block {
+    float: left;
+    margin: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.11);
+    padding: 4px 8px;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.yii-debug-toolbar__block_active,
+.yii-debug-toolbar__ajax:hover {
+    background: rgb(247, 247, 247); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#e0e0e0', GradientType=0); /* IE6-9 */
+}
+
+.yii-debug-toolbar__block a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.yii-debug-toolbar__block img {
+    vertical-align: middle;
+}
+
+.yii-debug-toolbar__label {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+    white-space: nowrap;
+    vertical-align: baseline;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #999999;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.yii-debug-toolbar__label:empty {
+    display: none;
+}
+
+a.yii-debug-toolbar__label:hover,
+a.yii-debug-toolbar__label:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.yii-debug-toolbar__label_important,
+.yii-debug-toolbar__label_error {
+    background-color: #b94a48;
+}
+
+.yii-debug-toolbar__label_important[href] {
+    background-color: #953b39;
+}
+
+.yii-debug-toolbar__label_warning,
+.yii-debug-toolbar__badge_warning {
+    background-color: #f89406;
+}
+
+.yii-debug-toolbar__label_warning[href] {
+    background-color: #c67605;
+}
+
+.yii-debug-toolbar__label_success {
+    background-color: #468847;
+}
+
+.yii-debug-toolbar__label_success[href] {
+    background-color: #356635;
+}
+
+.yii-debug-toolbar__label_info {
+    background-color: #3a87ad;
+}
+
+.yii-debug-toolbar__label_info[href] {
+    background-color: #2d6987;
+}
+
+.yii-debug-toolbar__label_inverse,
+.yii-debug-toolbar__badge_inverse {
+    background-color: #333333;
+}
+
+.yii-debug-toolbar__label_inverse[href],
+.yii-debug-toolbar__badge_inverse[href] {
+    background-color: #1a1a1a;
+}
+
+.yii-debug-toolbar__title {
+    background: rgb(247, 247, 247); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#e0e0e0', GradientType=0); /* IE6-9 */
+}
+
+.yii-debug-toolbar__block_last{ /* creates space for .yii-debug-toolbar__toggle, .yii-debug-toolbar__external */
+    width: 80px;
+    height: 40px;
+    float: left;
+}
+
+.yii-debug-toolbar__toggle,
+.yii-debug-toolbar__external {
+    cursor: pointer;
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 28px;
+    color: #ffffff;
+    text-align: center;
+
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+    transition: opacity .3s ease;
+}
+
+.yii-debug-toolbar__toggle:hover,
+.yii-debug-toolbar__toggle:focus,
+.yii-debug-toolbar__external:hover,
+.yii-debug-toolbar__external:focus {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.yii-debug-toolbar__toggle-icon,
+.yii-debug-toolbar__external-icon {
+    display: inline-block;
+
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.yii-debug-toolbar__toggle {
+    right: 10px;
+    bottom: 4px;
+}
+
+.yii-debug-toolbar__toggle-icon {
+    padding: 7px 0;
+    width: 10px;
+    height: 16px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDUwIDUwIj48cGF0aCBmaWxsPSIjNDQ0IiBkPSJNMTUuNTYzIDQwLjgzNmEuOTk3Ljk5NyAwIDAgMCAxLjQxNCAwbDE1LTE1YTEgMSAwIDAgMCAwLTEuNDE0bC0xNS0xNWExIDEgMCAwIDAtMS40MTQgMS40MTRMMjkuODU2IDI1LjEzIDE1LjU2MyAzOS40MmExIDEgMCAwIDAgMCAxLjQxNHoiLz48L3N2Zz4=');
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.yii-debug-toolbar_active .yii-debug-toolbar__toggle-icon {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.yii-debug-toolbar_iframe_active .yii-debug-toolbar__toggle-icon {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.yii-debug-toolbar__external {
+    display: none;
+    right: 50px;
+    bottom: 4px;
+}
+
+.yii-debug-toolbar_iframe_active .yii-debug-toolbar__external {
+    display: block;
+}
+
+.yii-debug-toolbar__external-icon {
+    padding: 8px 0;
+    width: 14px;
+    height: 14px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDUwIDUwIj48cGF0aCBmaWxsPSIjNDQ0IiBkPSJNMzkuNjQyIDkuNzIyYTEuMDEgMS4wMSAwIDAgMC0uMzgyLS4wNzdIMjguMTAzYTEgMSAwIDAgMCAwIDJoOC43NDNMMjEuNyAyNi43OWExIDEgMCAwIDAgMS40MTQgMS40MTVMMzguMjYgMTMuMDZ2OC43NDNhMSAxIDAgMCAwIDIgMFYxMC42NDZhMS4wMDUgMS4wMDUgMCAwIDAtLjYxOC0uOTI0eiIvPjxwYXRoIGQ9Ik0zOS4yNiAyNy45ODVhMSAxIDAgMCAwLTEgMXYxMC42NmgtMjh2LTI4aDEwLjY4M2ExIDEgMCAwIDAgMC0ySDkuMjZhMSAxIDAgMCAwLTEgMXYzMGExIDEgMCAwIDAgMSAxaDMwYTEgMSAwIDAgMCAxLTF2LTExLjY2YTEgMSAwIDAgMC0xLTF6Ii8+PC9zdmc+');
+}
+
+.yii-debug-toolbar__ajax {
+    position: relative;
+}
+
+.yii-debug-toolbar__ajax:hover .yii-debug-toolbar__ajax_info,
+.yii-debug-toolbar__ajax:focus .yii-debug-toolbar__ajax_info {
+    visibility: visible;
+}
+.yii-debug-toolbar__ajax_info {
+    visibility: hidden;
+    transition: visibility .2s linear;
+    background-color: white;
+    box-shadow: inset 0 -10px 10px -10px #e1e1e1;
+    position: absolute;
+    bottom: 40px;
+    left: -1px;
+    padding: 10px;
+    max-width: 480px;
+    max-height: 480px;
+    word-wrap: break-word;
+    overflow: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    z-index: 1000001;
+}
+.yii-debug-toolbar__ajax a {
+    color: #337ab7;
+}
+.yii-debug-toolbar__ajax table {
+    width: 100%;
+    table-layout: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.yii-debug-toolbar__ajax table td {
+    padding: 4px;
+    font-size: 12px;
+    line-height: normal;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.yii-debug-toolbar__ajax table th {
+    padding: 4px;
+    font-size: 11px;
+    line-height: normal;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+.yii-debug-toolbar__ajax_request_status {
+    color: white;
+    padding: 2px 5px;
+}
+.yii-debug-toolbar__ajax_request_url {
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}</style><script>(function () {
+    'use strict';
+
+    var findToolbar = function () {
+            return document.querySelector('#yii-debug-toolbar');
+        },
+        ajax = function (url, settings) {
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+            settings = settings || {};
+            xhr.open(settings.method || 'GET', url, true);
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            xhr.setRequestHeader('Accept', 'text/html');
+            xhr.onreadystatechange = function (state) {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200 && settings.success) {
+                        settings.success(xhr);
+                    } else if (xhr.status != 200 && settings.error) {
+                        settings.error(xhr);
+                    }
+                }
+            };
+            xhr.send(settings.data || '');
+        },
+        url,
+        div,
+        toolbarEl = findToolbar(),
+        toolbarAnimatingClass = 'yii-debug-toolbar_animating',
+        barSelector = '.yii-debug-toolbar__bar',
+        viewSelector = '.yii-debug-toolbar__view',
+        blockSelector = '.yii-debug-toolbar__block',
+        toggleSelector = '.yii-debug-toolbar__toggle',
+        externalSelector = '.yii-debug-toolbar__external',
+
+        CACHE_KEY = 'yii-debug-toolbar',
+        ACTIVE_STATE = 'active',
+
+        animationTime = 300,
+
+        activeClass = 'yii-debug-toolbar_active',
+        iframeActiveClass = 'yii-debug-toolbar_iframe_active',
+        iframeAnimatingClass = 'yii-debug-toolbar_iframe_animating',
+        titleClass = 'yii-debug-toolbar__title',
+        blockClass = 'yii-debug-toolbar__block',
+        blockActiveClass = 'yii-debug-toolbar__block_active',
+        requestStack = [];
+
+    if (toolbarEl) {
+        url = toolbarEl.getAttribute('data-url');
+
+        ajax(url, {
+            success: function (xhr) {
+                div = document.createElement('div');
+                div.innerHTML = xhr.responseText;
+
+                toolbarEl.parentNode && toolbarEl.parentNode.replaceChild(div, toolbarEl);
+
+                showToolbar(findToolbar());
+            },
+            error: function (xhr) {
+                toolbarEl.innerHTML = xhr.responseText;
+            }
+        });
+    }
+
+    function showToolbar(toolbarEl) {
+        var barEl = toolbarEl.querySelector(barSelector),
+            viewEl = toolbarEl.querySelector(viewSelector),
+            toggleEl = toolbarEl.querySelector(toggleSelector),
+            externalEl = toolbarEl.querySelector(externalSelector),
+            blockEls = barEl.querySelectorAll(blockSelector),
+            iframeEl = viewEl.querySelector('iframe'),
+            iframeHeight = function () {
+                return (window.innerHeight * 0.7) + 'px';
+            },
+            isIframeActive = function () {
+                return toolbarEl.classList.contains(iframeActiveClass);
+            },
+            showIframe = function (href) {
+                toolbarEl.classList.add(iframeAnimatingClass);
+                toolbarEl.classList.add(iframeActiveClass);
+
+                iframeEl.src = externalEl.href = href;
+                viewEl.style.height = iframeHeight();
+                setTimeout(function() {
+                    toolbarEl.classList.remove(iframeAnimatingClass);
+                }, animationTime);
+            },
+            hideIframe = function () {
+                toolbarEl.classList.add(iframeAnimatingClass);
+                toolbarEl.classList.remove(iframeActiveClass);
+                removeActiveBlocksCls();
+
+                externalEl.href = '#';
+                viewEl.style.height = '';
+                setTimeout(function() {
+                    toolbarEl.classList.remove(iframeAnimatingClass);
+                }, animationTime);
+            },
+            removeActiveBlocksCls = function () {
+                [].forEach.call(blockEls, function (el) {
+                    el.classList.remove(blockActiveClass);
+                });
+            },
+            toggleToolbarClass = function (className) {
+                toolbarEl.classList.add(toolbarAnimatingClass);
+                if (toolbarEl.classList.contains(className)) {
+                    toolbarEl.classList.remove(className);
+                } else {
+                    toolbarEl.classList.add(className);
+                }
+                setTimeout(function () {
+                    toolbarEl.classList.remove(toolbarAnimatingClass);
+                }, animationTime);
+            },
+            toggleStorageState = function (key, value) {
+                if (window.localStorage) {
+                    var item = localStorage.getItem(key);
+
+                    if (item) {
+                        localStorage.removeItem(key);
+                    } else {
+                        localStorage.setItem(key, value);
+                    }
+                }
+            },
+            restoreStorageState = function (key) {
+                if (window.localStorage) {
+                    return localStorage.getItem(key);
+                }
+            },
+            togglePosition = function () {
+                if (isIframeActive()) {
+                    hideIframe();
+                } else {
+                    toggleToolbarClass(activeClass);
+                    toggleStorageState(CACHE_KEY, ACTIVE_STATE);
+                }
+            };
+
+        toolbarEl.style.display = 'block';
+
+        if (restoreStorageState(CACHE_KEY) == ACTIVE_STATE) {
+            toolbarEl.classList.add(activeClass);
+        }
+
+        window.onresize = function () {
+            if (toolbarEl.classList.contains(iframeActiveClass)) {
+                viewEl.style.height = iframeHeight();
+            }
+        };
+
+        barEl.onclick = function (e) {
+            var target = e.target,
+                block = findAncestor(target, blockClass);
+
+            if (block && !block.classList.contains(titleClass)
+                && e.which !== 2 && !e.ctrlKey // not mouse wheel and not ctrl+click
+            ) {
+                while (target !== this) {
+                    if (target.href) {
+                        removeActiveBlocksCls();
+                        block.classList.add(blockActiveClass);
+                        showIframe(target.href);
+                    }
+                    target = target.parentNode;
+                }
+
+                e.preventDefault();
+            }
+        };
+
+        toggleEl.onclick = togglePosition;
+    }
+
+    function findAncestor(el, cls) {
+        while ((el = el.parentElement) && !el.classList.contains(cls));
+        return el;
+    }
+
+    function renderAjaxRequests() {
+        var requestCounter = document.getElementsByClassName('yii-debug-toolbar__ajax_counter');
+        if (!requestCounter.length) {
+            return;
+        }
+        var ajaxToolbarPanel = document.querySelector('.yii-debug-toolbar__ajax');
+        var tbodies = document.getElementsByClassName('yii-debug-toolbar__ajax_requests');
+        var state = 'ok';
+        if (tbodies.length) {
+            var tbody = tbodies[0];
+            var rows = document.createDocumentFragment();
+            if (requestStack.length) {
+                var firstItem = requestStack.length > 20 ? requestStack.length - 20 : 0;
+                for (var i = firstItem; i < requestStack.length; i++) {
+                    var request = requestStack[i];
+                    var row = document.createElement('tr');
+                    rows.appendChild(row);
+
+                    var methodCell = document.createElement('td');
+                    methodCell.innerHTML = request.method;
+                    row.appendChild(methodCell);
+
+                    var statusCodeCell = document.createElement('td');
+                    var statusCode = document.createElement('span');
+                    if (request.statusCode < 300) {
+                        statusCode.setAttribute('class', 'yii-debug-toolbar__ajax_request_status yii-debug-toolbar__label_success');
+                    } else if (request.statusCode < 400) {
+                        statusCode.setAttribute('class', 'yii-debug-toolbar__ajax_request_status yii-debug-toolbar__label_warning');
+                    } else {
+                        statusCode.setAttribute('class', 'yii-debug-toolbar__ajax_request_status yii-debug-toolbar__label_error');
+                    }
+                    statusCode.textContent = request.statusCode || '-';
+                    statusCodeCell.appendChild(statusCode);
+                    row.appendChild(statusCodeCell);
+
+                    var pathCell = document.createElement('td');
+                    pathCell.className = 'yii-debug-toolbar__ajax_request_url';
+                    pathCell.innerHTML = request.url;
+                    pathCell.setAttribute('title', request.url);
+                    row.appendChild(pathCell);
+
+                    var durationCell = document.createElement('td');
+                    durationCell.className = 'yii-debug-toolbar__ajax_request_duration';
+                    if (request.duration) {
+                        durationCell.innerText = request.duration + " ms";
+                    } else {
+                        durationCell.innerText = '-';
+                    }
+                    row.appendChild(durationCell);
+                    row.appendChild(document.createTextNode(' '));
+
+                    var profilerCell = document.createElement('td');
+                    if (request.profilerUrl) {
+                        var profilerLink = document.createElement('a');
+                        profilerLink.setAttribute('href', request.profilerUrl);
+                        profilerLink.innerText = request.profile;
+                        profilerCell.appendChild(profilerLink);
+                    } else {
+                        profilerCell.innerText = 'n/a';
+                    }
+                    row.appendChild(profilerCell);
+
+                    if (request.error) {
+                        if (state !== "loading" && i > requestStack.length - 4) {
+                            state = 'error';
+                        }
+                    } else if (request.loading) {
+                        state = 'loading'
+                    }
+                    row.className = 'yii-debug-toolbar__ajax_request';
+                }
+                while (tbody.firstChild) {
+                    tbody.removeChild(tbody.firstChild);
+                }
+                tbody.appendChild(rows);
+            }
+            ajaxToolbarPanel.style.display = 'block';
+        }
+        requestCounter[0].innerText = requestStack.length;
+        var className = 'yii-debug-toolbar__label yii-debug-toolbar__ajax_counter';
+        if (state == 'ok') {
+            className += ' yii-debug-toolbar__label_success';
+        } else if (state == 'error') {
+            className += ' yii-debug-toolbar__label_error';
+        }
+        requestCounter[0].className = className;
+    };
+
+    var proxied = XMLHttpRequest.prototype.open;
+
+    XMLHttpRequest.prototype.open = function (method, url, async, user, pass) {
+        var self = this;
+        /* prevent logging AJAX calls to static and inline files, like templates */
+        if (url.substr(0, 1) === '/' && !url.match(new RegExp("{{ excluded_ajax_paths }}"))) {
+            var stackElement = {
+                loading: true,
+                error: false,
+                url: url,
+                method: method,
+                start: new Date()
+            };
+            requestStack.push(stackElement);
+            this.addEventListener("readystatechange", function () {
+                if (self.readyState == 4) {
+                    stackElement.duration = self.getResponseHeader("X-Debug-Duration") || new Date() - stackElement.start;
+                    stackElement.loading = false;
+                    stackElement.statusCode = self.status;
+                    stackElement.error = self.status < 200 || self.status >= 400;
+                    stackElement.profile = self.getResponseHeader("X-Debug-Tag");
+                    stackElement.profilerUrl = self.getResponseHeader("X-Debug-Link");
+                    renderAjaxRequests();
+                }
+            }, false);
+            renderAjaxRequests();
+        }
+        proxied.apply(this, Array.prototype.slice.call(arguments));
+    };
+
+})();</script><div id="yii-debug-toolbar" data-url="D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=debug%2Fdefault%2Ftoolbar&amp;tag=585ce464dace0" style="display:none" class="yii-debug-toolbar-bottom"></div><style>
+#yii-debug-toolbar-logo {
+    position: fixed;
+    right: 31px;
+    bottom: 4px;
+}
+
+.yii-debug-toolbar {
+    font: 11px Verdana, Arial, sans-serif;
+    text-align: left;
+    width: 96px;
+    transition: width .3s ease;
+    z-index: 1000000;
+}
+
+.yii-debug-toolbar_active {
+    width: 100%;
+}
+
+.yii-debug-toolbar_position_top {
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+.yii-debug-toolbar_position_bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.yii-debug-toolbar__bar {
+    position: relative;
+    padding: 0;
+    font: 11px Verdana, Arial, sans-serif;
+    text-align: left;
+    overflow: hidden;
+    box-sizing: content-box;
+
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(247, 247, 247) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(247, 247, 247) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(247, 247, 247) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f7f7', GradientType=0); /* IE6-9 */
+
+    border: 1px solid rgba(0, 0, 0, 0.11);
+
+    /* ensure debug toolbar text is displayed ltr even on rtl pages */
+    direction: ltr;
+}
+
+.yii-debug-toolbar.yii-debug-toolbar_active:not(.yii-debug-toolbar_animating) .yii-debug-toolbar__bar {
+    overflow: visible;
+}
+.yii-debug-toolbar:not(.yii-debug-toolbar_active) .yii-debug-toolbar__bar {
+    height:40px;
+}
+
+.yii-debug-toolbar__bar:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.yii-debug-toolbar__view {
+    height: 0;
+    overflow: hidden;
+    background: white;
+}
+
+.yii-debug-toolbar__view iframe {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+.yii-debug-toolbar_iframe_active .yii-debug-toolbar__view {
+    height: 100%;
+}
+
+.yii-debug-toolbar_iframe_animating .yii-debug-toolbar__view {
+    transition: height .3s ease;
+}
+
+.yii-debug-toolbar__block {
+    float: left;
+    margin: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.11);
+    padding: 4px 8px;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.yii-debug-toolbar__block_active,
+.yii-debug-toolbar__ajax:hover {
+    background: rgb(247, 247, 247); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#e0e0e0', GradientType=0); /* IE6-9 */
+}
+
+.yii-debug-toolbar__block a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.yii-debug-toolbar__block img {
+    vertical-align: middle;
+}
+
+.yii-debug-toolbar__label {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+    white-space: nowrap;
+    vertical-align: baseline;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #999999;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.yii-debug-toolbar__label:empty {
+    display: none;
+}
+
+a.yii-debug-toolbar__label:hover,
+a.yii-debug-toolbar__label:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.yii-debug-toolbar__label_important,
+.yii-debug-toolbar__label_error {
+    background-color: #b94a48;
+}
+
+.yii-debug-toolbar__label_important[href] {
+    background-color: #953b39;
+}
+
+.yii-debug-toolbar__label_warning,
+.yii-debug-toolbar__badge_warning {
+    background-color: #f89406;
+}
+
+.yii-debug-toolbar__label_warning[href] {
+    background-color: #c67605;
+}
+
+.yii-debug-toolbar__label_success {
+    background-color: #468847;
+}
+
+.yii-debug-toolbar__label_success[href] {
+    background-color: #356635;
+}
+
+.yii-debug-toolbar__label_info {
+    background-color: #3a87ad;
+}
+
+.yii-debug-toolbar__label_info[href] {
+    background-color: #2d6987;
+}
+
+.yii-debug-toolbar__label_inverse,
+.yii-debug-toolbar__badge_inverse {
+    background-color: #333333;
+}
+
+.yii-debug-toolbar__label_inverse[href],
+.yii-debug-toolbar__badge_inverse[href] {
+    background-color: #1a1a1a;
+}
+
+.yii-debug-toolbar__title {
+    background: rgb(247, 247, 247); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(247, 247, 247) 0%, rgb(224, 224, 224) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#e0e0e0', GradientType=0); /* IE6-9 */
+}
+
+.yii-debug-toolbar__block_last{ /* creates space for .yii-debug-toolbar__toggle, .yii-debug-toolbar__external */
+    width: 80px;
+    height: 40px;
+    float: left;
+}
+
+.yii-debug-toolbar__toggle,
+.yii-debug-toolbar__external {
+    cursor: pointer;
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 28px;
+    color: #ffffff;
+    text-align: center;
+
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+    transition: opacity .3s ease;
+}
+
+.yii-debug-toolbar__toggle:hover,
+.yii-debug-toolbar__toggle:focus,
+.yii-debug-toolbar__external:hover,
+.yii-debug-toolbar__external:focus {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.yii-debug-toolbar__toggle-icon,
+.yii-debug-toolbar__external-icon {
+    display: inline-block;
+
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.yii-debug-toolbar__toggle {
+    right: 10px;
+    bottom: 4px;
+}
+
+.yii-debug-toolbar__toggle-icon {
+    padding: 7px 0;
+    width: 10px;
+    height: 16px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDUwIDUwIj48cGF0aCBmaWxsPSIjNDQ0IiBkPSJNMTUuNTYzIDQwLjgzNmEuOTk3Ljk5NyAwIDAgMCAxLjQxNCAwbDE1LTE1YTEgMSAwIDAgMCAwLTEuNDE0bC0xNS0xNWExIDEgMCAwIDAtMS40MTQgMS40MTRMMjkuODU2IDI1LjEzIDE1LjU2MyAzOS40MmExIDEgMCAwIDAgMCAxLjQxNHoiLz48L3N2Zz4=');
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.yii-debug-toolbar_active .yii-debug-toolbar__toggle-icon {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.yii-debug-toolbar_iframe_active .yii-debug-toolbar__toggle-icon {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.yii-debug-toolbar__external {
+    display: none;
+    right: 50px;
+    bottom: 4px;
+}
+
+.yii-debug-toolbar_iframe_active .yii-debug-toolbar__external {
+    display: block;
+}
+
+.yii-debug-toolbar__external-icon {
+    padding: 8px 0;
+    width: 14px;
+    height: 14px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDUwIDUwIj48cGF0aCBmaWxsPSIjNDQ0IiBkPSJNMzkuNjQyIDkuNzIyYTEuMDEgMS4wMSAwIDAgMC0uMzgyLS4wNzdIMjguMTAzYTEgMSAwIDAgMCAwIDJoOC43NDNMMjEuNyAyNi43OWExIDEgMCAwIDAgMS40MTQgMS40MTVMMzguMjYgMTMuMDZ2OC43NDNhMSAxIDAgMCAwIDIgMFYxMC42NDZhMS4wMDUgMS4wMDUgMCAwIDAtLjYxOC0uOTI0eiIvPjxwYXRoIGQ9Ik0zOS4yNiAyNy45ODVhMSAxIDAgMCAwLTEgMXYxMC42NmgtMjh2LTI4aDEwLjY4M2ExIDEgMCAwIDAgMC0ySDkuMjZhMSAxIDAgMCAwLTEgMXYzMGExIDEgMCAwIDAgMSAxaDMwYTEgMSAwIDAgMCAxLTF2LTExLjY2YTEgMSAwIDAgMC0xLTF6Ii8+PC9zdmc+');
+}
+
+.yii-debug-toolbar__ajax {
+    position: relative;
+}
+
+.yii-debug-toolbar__ajax:hover .yii-debug-toolbar__ajax_info,
+.yii-debug-toolbar__ajax:focus .yii-debug-toolbar__ajax_info {
+    visibility: visible;
+}
+.yii-debug-toolbar__ajax_info {
+    visibility: hidden;
+    transition: visibility .2s linear;
+    background-color: white;
+    box-shadow: inset 0 -10px 10px -10px #e1e1e1;
+    position: absolute;
+    bottom: 40px;
+    left: -1px;
+    padding: 10px;
+    max-width: 480px;
+    max-height: 480px;
+    word-wrap: break-word;
+    overflow: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    z-index: 1000001;
+}
+.yii-debug-toolbar__ajax a {
+    color: #337ab7;
+}
+.yii-debug-toolbar__ajax table {
+    width: 100%;
+    table-layout: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.yii-debug-toolbar__ajax table td {
+    padding: 4px;
+    font-size: 12px;
+    line-height: normal;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.yii-debug-toolbar__ajax table th {
+    padding: 4px;
+    font-size: 11px;
+    line-height: normal;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+.yii-debug-toolbar__ajax_request_status {
+    color: white;
+    padding: 2px 5px;
+}
+.yii-debug-toolbar__ajax_request_url {
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}</style><script>(function () {
+    'use strict';
+
+    var findToolbar = function () {
+            return document.querySelector('#yii-debug-toolbar');
+        },
+        ajax = function (url, settings) {
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+            settings = settings || {};
+            xhr.open(settings.method || 'GET', url, true);
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            xhr.setRequestHeader('Accept', 'text/html');
+            xhr.onreadystatechange = function (state) {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200 && settings.success) {
+                        settings.success(xhr);
+                    } else if (xhr.status != 200 && settings.error) {
+                        settings.error(xhr);
+                    }
+                }
+            };
+            xhr.send(settings.data || '');
+        },
+        url,
+        div,
+        toolbarEl = findToolbar(),
+        toolbarAnimatingClass = 'yii-debug-toolbar_animating',
+        barSelector = '.yii-debug-toolbar__bar',
+        viewSelector = '.yii-debug-toolbar__view',
+        blockSelector = '.yii-debug-toolbar__block',
+        toggleSelector = '.yii-debug-toolbar__toggle',
+        externalSelector = '.yii-debug-toolbar__external',
+
+        CACHE_KEY = 'yii-debug-toolbar',
+        ACTIVE_STATE = 'active',
+
+        animationTime = 300,
+
+        activeClass = 'yii-debug-toolbar_active',
+        iframeActiveClass = 'yii-debug-toolbar_iframe_active',
+        iframeAnimatingClass = 'yii-debug-toolbar_iframe_animating',
+        titleClass = 'yii-debug-toolbar__title',
+        blockClass = 'yii-debug-toolbar__block',
+        blockActiveClass = 'yii-debug-toolbar__block_active',
+        requestStack = [];
+
+    if (toolbarEl) {
+        url = toolbarEl.getAttribute('data-url');
+
+        ajax(url, {
+            success: function (xhr) {
+                div = document.createElement('div');
+                div.innerHTML = xhr.responseText;
+
+                toolbarEl.parentNode && toolbarEl.parentNode.replaceChild(div, toolbarEl);
+
+                showToolbar(findToolbar());
+            },
+            error: function (xhr) {
+                toolbarEl.innerHTML = xhr.responseText;
+            }
+        });
+    }
+
+    function showToolbar(toolbarEl) {
+        var barEl = toolbarEl.querySelector(barSelector),
+            viewEl = toolbarEl.querySelector(viewSelector),
+            toggleEl = toolbarEl.querySelector(toggleSelector),
+            externalEl = toolbarEl.querySelector(externalSelector),
+            blockEls = barEl.querySelectorAll(blockSelector),
+            iframeEl = viewEl.querySelector('iframe'),
+            iframeHeight = function () {
+                return (window.innerHeight * 0.7) + 'px';
+            },
+            isIframeActive = function () {
+                return toolbarEl.classList.contains(iframeActiveClass);
+            },
+            showIframe = function (href) {
+                toolbarEl.classList.add(iframeAnimatingClass);
+                toolbarEl.classList.add(iframeActiveClass);
+
+                iframeEl.src = externalEl.href = href;
+                viewEl.style.height = iframeHeight();
+                setTimeout(function() {
+                    toolbarEl.classList.remove(iframeAnimatingClass);
+                }, animationTime);
+            },
+            hideIframe = function () {
+                toolbarEl.classList.add(iframeAnimatingClass);
+                toolbarEl.classList.remove(iframeActiveClass);
+                removeActiveBlocksCls();
+
+                externalEl.href = '#';
+                viewEl.style.height = '';
+                setTimeout(function() {
+                    toolbarEl.classList.remove(iframeAnimatingClass);
+                }, animationTime);
+            },
+            removeActiveBlocksCls = function () {
+                [].forEach.call(blockEls, function (el) {
+                    el.classList.remove(blockActiveClass);
+                });
+            },
+            toggleToolbarClass = function (className) {
+                toolbarEl.classList.add(toolbarAnimatingClass);
+                if (toolbarEl.classList.contains(className)) {
+                    toolbarEl.classList.remove(className);
+                } else {
+                    toolbarEl.classList.add(className);
+                }
+                setTimeout(function () {
+                    toolbarEl.classList.remove(toolbarAnimatingClass);
+                }, animationTime);
+            },
+            toggleStorageState = function (key, value) {
+                if (window.localStorage) {
+                    var item = localStorage.getItem(key);
+
+                    if (item) {
+                        localStorage.removeItem(key);
+                    } else {
+                        localStorage.setItem(key, value);
+                    }
+                }
+            },
+            restoreStorageState = function (key) {
+                if (window.localStorage) {
+                    return localStorage.getItem(key);
+                }
+            },
+            togglePosition = function () {
+                if (isIframeActive()) {
+                    hideIframe();
+                } else {
+                    toggleToolbarClass(activeClass);
+                    toggleStorageState(CACHE_KEY, ACTIVE_STATE);
+                }
+            };
+
+        toolbarEl.style.display = 'block';
+
+        if (restoreStorageState(CACHE_KEY) == ACTIVE_STATE) {
+            toolbarEl.classList.add(activeClass);
+        }
+
+        window.onresize = function () {
+            if (toolbarEl.classList.contains(iframeActiveClass)) {
+                viewEl.style.height = iframeHeight();
+            }
+        };
+
+        barEl.onclick = function (e) {
+            var target = e.target,
+                block = findAncestor(target, blockClass);
+
+            if (block && !block.classList.contains(titleClass)
+                && e.which !== 2 && !e.ctrlKey // not mouse wheel and not ctrl+click
+            ) {
+                while (target !== this) {
+                    if (target.href) {
+                        removeActiveBlocksCls();
+                        block.classList.add(blockActiveClass);
+                        showIframe(target.href);
+                    }
+                    target = target.parentNode;
+                }
+
+                e.preventDefault();
+            }
+        };
+
+        toggleEl.onclick = togglePosition;
+    }
+
+    function findAncestor(el, cls) {
+        while ((el = el.parentElement) && !el.classList.contains(cls));
+        return el;
+    }
+
+    function renderAjaxRequests() {
+        var requestCounter = document.getElementsByClassName('yii-debug-toolbar__ajax_counter');
+        if (!requestCounter.length) {
+            return;
+        }
+        var ajaxToolbarPanel = document.querySelector('.yii-debug-toolbar__ajax');
+        var tbodies = document.getElementsByClassName('yii-debug-toolbar__ajax_requests');
+        var state = 'ok';
+        if (tbodies.length) {
+            var tbody = tbodies[0];
+            var rows = document.createDocumentFragment();
+            if (requestStack.length) {
+                var firstItem = requestStack.length > 20 ? requestStack.length - 20 : 0;
+                for (var i = firstItem; i < requestStack.length; i++) {
+                    var request = requestStack[i];
+                    var row = document.createElement('tr');
+                    rows.appendChild(row);
+
+                    var methodCell = document.createElement('td');
+                    methodCell.innerHTML = request.method;
+                    row.appendChild(methodCell);
+
+                    var statusCodeCell = document.createElement('td');
+                    var statusCode = document.createElement('span');
+                    if (request.statusCode < 300) {
+                        statusCode.setAttribute('class', 'yii-debug-toolbar__ajax_request_status yii-debug-toolbar__label_success');
+                    } else if (request.statusCode < 400) {
+                        statusCode.setAttribute('class', 'yii-debug-toolbar__ajax_request_status yii-debug-toolbar__label_warning');
+                    } else {
+                        statusCode.setAttribute('class', 'yii-debug-toolbar__ajax_request_status yii-debug-toolbar__label_error');
+                    }
+                    statusCode.textContent = request.statusCode || '-';
+                    statusCodeCell.appendChild(statusCode);
+                    row.appendChild(statusCodeCell);
+
+                    var pathCell = document.createElement('td');
+                    pathCell.className = 'yii-debug-toolbar__ajax_request_url';
+                    pathCell.innerHTML = request.url;
+                    pathCell.setAttribute('title', request.url);
+                    row.appendChild(pathCell);
+
+                    var durationCell = document.createElement('td');
+                    durationCell.className = 'yii-debug-toolbar__ajax_request_duration';
+                    if (request.duration) {
+                        durationCell.innerText = request.duration + " ms";
+                    } else {
+                        durationCell.innerText = '-';
+                    }
+                    row.appendChild(durationCell);
+                    row.appendChild(document.createTextNode(' '));
+
+                    var profilerCell = document.createElement('td');
+                    if (request.profilerUrl) {
+                        var profilerLink = document.createElement('a');
+                        profilerLink.setAttribute('href', request.profilerUrl);
+                        profilerLink.innerText = request.profile;
+                        profilerCell.appendChild(profilerLink);
+                    } else {
+                        profilerCell.innerText = 'n/a';
+                    }
+                    row.appendChild(profilerCell);
+
+                    if (request.error) {
+                        if (state !== "loading" && i > requestStack.length - 4) {
+                            state = 'error';
+                        }
+                    } else if (request.loading) {
+                        state = 'loading'
+                    }
+                    row.className = 'yii-debug-toolbar__ajax_request';
+                }
+                while (tbody.firstChild) {
+                    tbody.removeChild(tbody.firstChild);
+                }
+                tbody.appendChild(rows);
+            }
+            ajaxToolbarPanel.style.display = 'block';
+        }
+        requestCounter[0].innerText = requestStack.length;
+        var className = 'yii-debug-toolbar__label yii-debug-toolbar__ajax_counter';
+        if (state == 'ok') {
+            className += ' yii-debug-toolbar__label_success';
+        } else if (state == 'error') {
+            className += ' yii-debug-toolbar__label_error';
+        }
+        requestCounter[0].className = className;
+    };
+
+    var proxied = XMLHttpRequest.prototype.open;
+
+    XMLHttpRequest.prototype.open = function (method, url, async, user, pass) {
+        var self = this;
+        /* prevent logging AJAX calls to static and inline files, like templates */
+        if (url.substr(0, 1) === '/' && !url.match(new RegExp("{{ excluded_ajax_paths }}"))) {
+            var stackElement = {
+                loading: true,
+                error: false,
+                url: url,
+                method: method,
+                start: new Date()
+            };
+            requestStack.push(stackElement);
+            this.addEventListener("readystatechange", function () {
+                if (self.readyState == 4) {
+                    stackElement.duration = self.getResponseHeader("X-Debug-Duration") || new Date() - stackElement.start;
+                    stackElement.loading = false;
+                    stackElement.statusCode = self.status;
+                    stackElement.error = self.status < 200 || self.status >= 400;
+                    stackElement.profile = self.getResponseHeader("X-Debug-Tag");
+                    stackElement.profilerUrl = self.getResponseHeader("X-Debug-Link");
+                    renderAjaxRequests();
+                }
+            }, false);
+            renderAjaxRequests();
+        }
+        proxied.apply(this, Array.prototype.slice.call(arguments));
+    };
+
+})();</script><script src="D:/NewXamp/htdocs/yiiApp/basic/web/assets/27c4c486/jquery.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/js/Planning.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/assets/f7e5fe20/yii.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/assets/f7e5fe20/yii.validation.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/assets/f7e5fe20/yii.activeForm.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/js/jquery.min.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/js/bootstrap.min.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/js/functions.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/vendor/bootstrap-tour/js/bootstrap-tour.min.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/vendor/moment/moment.min.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/js/dashboardjs.js"></script>
+<script src="D:/NewXamp/htdocs/yiiApp/basic/web/js/CouplePartnerjs.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#CouplePartnerForm').yiiActiveForm([{"id":"couplepartner-couple_partner_first_name","name":"COUPLE_PARTNER_FIRST_NAME","container":".field-couplepartner-couple_partner_first_name","input":"#couplepartner-couple_partner_first_name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"First  Name cannot be blank."});yii.validation.string(value, messages, {"message":"First  Name must be a string.","max":3,"tooLong":"First  Name should contain at most 3 characters.","skipOnEmpty":1});}},{"id":"couplepartner-couple_partner_last_name","name":"COUPLE_PARTNER_LAST_NAME","container":".field-couplepartner-couple_partner_last_name","input":"#couplepartner-couple_partner_last_name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Couple  Partner  Last  Name must be a string.","max":30,"tooLong":"Couple  Partner  Last  Name should contain at most 30 characters.","skipOnEmpty":1});}},{"id":"couplepartner-gender_id","name":"GENDER_ID","container":".field-couplepartner-gender_id","input":"#couplepartner-gender_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Gender must be an integer.","skipOnEmpty":1});}},{"id":"couplepartner-country_id","name":"COUNTRY_ID","container":".field-couplepartner-country_id","input":"#couplepartner-country_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Country  ID must be an integer.","skipOnEmpty":1});}},{"id":"couplepartner-city_id","name":"CITY_ID","container":".field-couplepartner-city_id","input":"#couplepartner-city_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"City  ID must be an integer.","skipOnEmpty":1});}},{"id":"couplepartner-zip_code","name":"ZIP_CODE","container":".field-couplepartner-zip_code","input":"#couplepartner-zip_code","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Zip  Code must be a string.","max":300,"tooLong":"Zip  Code should contain at most 300 characters.","skipOnEmpty":1});}},{"id":"couplepartner-couple_partner_mobile_number","name":"COUPLE_PARTNER_MOBILE_NUMBER","container":".field-couplepartner-couple_partner_mobile_number","input":"#couplepartner-couple_partner_mobile_number","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Couple  Partner  Mobile  Number must be a string.","max":15,"tooLong":"Couple  Partner  Mobile  Number should contain at most 15 characters.","skipOnEmpty":1});}},{"id":"couplepartner-couple_partner_email","name":"COUPLE_PARTNER_EMAIL","container":".field-couplepartner-couple_partner_email","input":"#couplepartner-couple_partner_email","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Couple  Partner  Email must be a string.","max":70,"tooLong":"Couple  Partner  Email should contain at most 70 characters.","skipOnEmpty":1});}},{"id":"couplepartner-couple_partner_password","name":"COUPLE_PARTNER_PASSWORD","container":".field-couplepartner-couple_partner_password","input":"#couplepartner-couple_partner_password","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Couple  Partner  Password must be a string.","max":50,"tooLong":"Couple  Partner  Password should contain at most 50 characters.","skipOnEmpty":1});}},{"id":"couplepartner-facebook_email","name":"FACEBOOK_EMAIL","container":".field-couplepartner-facebook_email","input":"#couplepartner-facebook_email","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Facebook  Email must be a string.","max":100,"tooLong":"Facebook  Email should contain at most 100 characters.","skipOnEmpty":1});}},{"id":"couplepartner-couple_partner_first_name","name":"COUPLE_PARTNER_FIRST_NAME","container":".field-couplepartner-couple_partner_first_name","input":"#couplepartner-couple_partner_first_name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"First  Name cannot be blank."});yii.validation.string(value, messages, {"message":"First  Name must be a string.","max":3,"tooLong":"First  Name should contain at most 3 characters.","skipOnEmpty":1});}},{"id":"couplepartner-couple_partner_last_name","name":"COUPLE_PARTNER_LAST_NAME","container":".field-couplepartner-couple_partner_last_name","input":"#couplepartner-couple_partner_last_name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Couple  Partner  Last  Name must be a string.","max":30,"tooLong":"Couple  Partner  Last  Name should contain at most 30 characters.","skipOnEmpty":1});}},{"id":"couplepartner-gender_id","name":"GENDER_ID","container":".field-couplepartner-gender_id","input":"#couplepartner-gender_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Gender must be an integer.","skipOnEmpty":1});}},{"id":"couplepartner-country_id","name":"COUNTRY_ID","container":".field-couplepartner-country_id","input":"#couplepartner-country_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Country  ID must be an integer.","skipOnEmpty":1});}},{"id":"couplepartner-city_id","name":"CITY_ID","container":".field-couplepartner-city_id","input":"#couplepartner-city_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"City  ID must be an integer.","skipOnEmpty":1});}},{"id":"couplepartner-zip_code","name":"ZIP_CODE","container":".field-couplepartner-zip_code","input":"#couplepartner-zip_code","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Zip  Code must be a string.","max":300,"tooLong":"Zip  Code should contain at most 300 characters.","skipOnEmpty":1});}},{"id":"couplepartner-couple_partner_mobile_number","name":"COUPLE_PARTNER_MOBILE_NUMBER","container":".field-couplepartner-couple_partner_mobile_number","input":"#couplepartner-couple_partner_mobile_number","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Couple  Partner  Mobile  Number must be a string.","max":15,"tooLong":"Couple  Partner  Mobile  Number should contain at most 15 characters.","skipOnEmpty":1});}},{"id":"couplepartner-couple_partner_email","name":"COUPLE_PARTNER_EMAIL","container":".field-couplepartner-couple_partner_email","input":"#couplepartner-couple_partner_email","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Couple  Partner  Email must be a string.","max":70,"tooLong":"Couple  Partner  Email should contain at most 70 characters.","skipOnEmpty":1});}},{"id":"couplepartner-couple_partner_password","name":"COUPLE_PARTNER_PASSWORD","container":".field-couplepartner-couple_partner_password","input":"#couplepartner-couple_partner_password","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Couple  Partner  Password must be a string.","max":50,"tooLong":"Couple  Partner  Password should contain at most 50 characters.","skipOnEmpty":1});}},{"id":"couplepartner-facebook_email","name":"FACEBOOK_EMAIL","container":".field-couplepartner-facebook_email","input":"#couplepartner-facebook_email","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Facebook  Email must be a string.","max":100,"tooLong":"Facebook  Email should contain at most 100 characters.","skipOnEmpty":1});}},{"id":"weddings-wedding_type_id","name":"WEDDING_TYPE_ID","container":".field-weddings-wedding_type_id","input":"#weddings-wedding_type_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Wedding  Type  ID must be an integer.","skipOnEmpty":1});}},{"id":"weddings-wedding_country_id","name":"WEDDING_COUNTRY_ID","container":".field-weddings-wedding_country_id","input":"#weddings-wedding_country_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Wedding  Country  ID must be an integer.","skipOnEmpty":1});}}], {"validationUrl":"index.php?r=couple-partner%2FperformAjaxValidation"});
+});</script></body>
+
+<script type="text/javascript">
+        function language_change(selected)
+        {
+            $.ajax('D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=site%2Flanguage',
+{'type':'post',
+success : function(data) {window.location.reload();},
+'data':'_lang='+selected+'&_csrf=NlhYMW1zUXQGADZUGhsBBXg6G2c3EgM9X2FrXz4jPDdOPmB4NTcpHA==',            
+            }
+            );
+        }
+        </script>
+<script type="text/javascript">
+    
+    
+ 
+        function language_chassssnge(selected)
+        {
+            $.ajax('D:/NewXamp/htdocs/yiiApp/basic/web/index.php?r=site%2Flanguage',
+{
+    'type':'post',
+     success : function(data) {window.location.reload();},
+      'data':'_lang='+selected+'&YII_CSRF_TOKEN=RHYzeS51a3QyGH5BdgJdQQU5YSBHPEYnKgxdDWACJiILOQIXYkMlMA==',     
+    }
+            );
+        }
+        
+    
+       
+        </script>
+        
+        <script>
+$(document).ready(function () {
+        $('body').on('beforeSubmit', 'form#AgendaTasksForm', function () {
+            var form = $(this);
+            // return false if form still have some validation errors
+            if (form.find('.has-error').length) 
+            {
+                alert('error');
+                return false;
+            }
+            // submit form
+            $.ajax({
+            url    : 'index.php?r=agenda-periodes%2Fsaveweddingtask',
+            type   : 'post',
+            data   : form.serialize(),
+            success: function (response) 
+            {
+                   alert(response);
+//                var getupdatedata = $(response).find('#filter_id_test');
+                // $.pjax.reload('#note_update_id'); for pjax update
+//                $('#yiiikap').html(getupdatedata);
+                //console.log(getupdatedata);
+            },
+            error: function(data){
+                alert(data);
+
+            }
+            });
+            return false;
+         });
+    });
+</script>
+<script>
+
+  function SaveNoteAjax(FromID){
+      var formDetails = $('#'+FromID);
+	 if (formDetails.find('.has-error').length)  
+            {
+                alert('error');
+                return false;
+            }
+		// Getting the form ID
+//		var  formID = $(this).attr('id');
+//		var formDetails = $('#'+FromID);
+		$.ajax({
+			type: "POST",
+			url: 'index.php?r=agenda-periodes%2Fsavetasknote',
+			data: formDetails.serialize(),
+			success: function (data) {	
+				// Inserting html into the result div
+				$('#results').html(data);
+			},
+			error: function(jqXHR, text, error){
+            // Displaying if there are any errors
+            	$('#result').html(error);           
+        }
+    });
+		return false;
+
+
+  } 
+</script>
+</html>
